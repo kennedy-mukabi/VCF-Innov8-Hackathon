@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLANT DISEASE CLASSIFIER</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="upload-btn-wrapper">
+        <button class="btn upload-file font-weight-500">
+            <span class="upload-btn">
+                <i class="material-icons d-block font-50 pb-2">cloud_upload</i>
+                <p id="choose-text-1">Choose Image of Crop leaf</p>
+            </span>
+            <span class="upload-select-button" id="blankFile-1">
+                *Supports .png, .jpg, .jpeg, .jfif
+            </span>
+            <span class="success-1">
+                <i class="material-icons text-success">check</i>
+            </span>
+        </button>
+        <input type="file" name="uploadImage" id="uploadImage">
+    </div>
+
+
+
+        <div class="card mb-3" style="background-color: whitesmoke;">
+            <div class="card-header">
+                <div class="init_status"></div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="" alt="" id="image" class="card-img-top">
+                    <div style="padding: 20px;" class="inner"></div>
+                </div>
+                </div>
+                <div class="col">
+                    <div class="card-body" style="padding: 20px;">
+                        <h2 class="card-title"><span class="pred_class"></span></h2>
+                        <div><p>Lorem ipsum</p></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card-footer text-muted">
+                <div class="accuracy"> 
+                    
+                <div class="box box-result">
+                <p style="padding : 10px;"> Solution </p>
+                </div>
+                </div>
+            </div>
+        </div>
+
+
+        
+
+        
+   
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tensorflow/2.0.1/tf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/progressbar.js/1.0.1/progressbar.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
